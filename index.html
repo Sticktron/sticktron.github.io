@@ -67,11 +67,18 @@
 		.separator {
 			padding: 0 10px;
 		}
-		.goblin {
+		#goblin {
 			font-size: 150px;
 			line-height: 300px;
 		}
 	</style>
+	
+	<script>
+		<!--var goblin = document.getElementById("goblin");-->
+		<!--goblin.onselectionchange = function() {-->
+		<!--	window.alert('yo');-->
+		<!--};-->
+	</script>
 	
 	<script>
   		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -92,7 +99,7 @@
 		<h2>iOS Jailbreak Goodies</h2>
 	</div>
 	
-	<div class="goblin" onselect="window.alert('hello');">😈</div>
+	<div id="goblin" onSelectionChange="window.alert('hello');">😈</div>
 	
 	<div class="links">
 		<span><img src="images/Email.png"><a href="mailto:sticktron@hotmail.com">Email</a></span>
