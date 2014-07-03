@@ -74,17 +74,15 @@
 	</style>
 	
 	<script>
+		flipped = false;
 		function flip() {
-			if (this.innerHTML == "😈") { 
-				this.innerHTML = "👿";
-			} else {
+			if (flipped) {
 				this.innerHTML = "😈";
+			} else {
+				this.innerHTML = "👿";
 			}
+			flipped = !flipped;
 		}
-		<!--var goblin = document.getElementById("goblin");-->
-		<!--goblin.onselectionchange = function() {-->
-		<!--	window.alert('yo');-->
-		<!--};-->
 	</script>
 	
 	<script>
