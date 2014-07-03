@@ -74,6 +74,13 @@
 	</style>
 	
 	<script>
+		function flip() {
+			if (this.innerHTML == "😈") { 
+				this.innerHTML = "👿";
+			} else {
+				this.innerHTML = "😈";
+			}
+		}
 		<!--var goblin = document.getElementById("goblin");-->
 		<!--goblin.onselectionchange = function() {-->
 		<!--	window.alert('yo');-->
@@ -99,7 +106,7 @@
 		<h2>iOS Jailbreak Goodies</h2>
 	</div>
 	
-	<div id="goblin" onselect="window.alert('hello');">😈</div>
+	<div id="goblin" onclick="flip">😈</div>
 	
 	<div class="links">
 		<span><img src="images/Email.png"><a href="mailto:sticktron@hotmail.com">Email</a></span>
