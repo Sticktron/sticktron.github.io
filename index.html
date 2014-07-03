@@ -75,11 +75,12 @@
 	
 	<script>
 		flipped = false;
-		function flip() {
+		function flip(obj) {
+			window.alert('flipping');
 			if (flipped) {
-				this.innerHTML = "😈";
+				obj.innerHTML = "😈";
 			} else {
-				this.innerHTML = "👿";
+				obj.innerHTML = "👿";
 			}
 			flipped = !flipped;
 		}
@@ -104,7 +105,7 @@
 		<h2>iOS Jailbreak Goodies</h2>
 	</div>
 	
-	<div id="goblin" onclick="flip();">😈</div>
+	<div id="goblin" onclick="flip(this);">😈</div>
 	
 	<div class="links">
 		<span><img src="images/Email.png"><a href="mailto:sticktron@hotmail.com">Email</a></span>
