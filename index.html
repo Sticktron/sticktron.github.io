@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
 	<title>Sticktron's Lab</title>
@@ -20,7 +20,8 @@
 		    font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
 		    font-style: normal;
 		    font-weight: 200;
-			font-size: 1em;
+		    font-size: 1em;
+			min-width: 640px;
 		}
 		body, input, textarea, select, button {
 		    text-rendering: optimizeLegibility;
@@ -53,60 +54,60 @@
 			margin: 0;
 		}
 		
-		.hero {
-			margin: 150px 0 0 0;
+		#hero {
+			margin: 150px auto 0;
+			background-color: #eee;
 		}
-		.links {
+		
+		#goblin {
+			height: 500px;
+			background-color: #eee;
+			
+		}
+		
+		#links {
 			white-space: nowrap;
+			background-color: #eee;
 		}
-		.links img {
+		
+		#links img {
 			 vertical-align: middle;
 			 margin-bottom: 4px;
 			 margin-right: 4px;
 		}
-		.separator {
+		
+		span.separator {
 			padding: 0 10px;
-		}
-		#goblin {
-			font-size: 150px;
-			line-height: 290px;
 		}
 	</style>
 	
 	<script>
 		flipped = false;
 		function flip(obj) {
-			if (flipped) {
-				obj.innerHTML = "😈";
-			} else {
-				obj.innerHTML = "👿";
-			}
-			flipped = !flipped;
+			flipped ? obj.innerHTML = "😈" : obj.innerHTML = "👿";
+			!flipped;
 		}
 	</script>
 	
 	<script>
   		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  		
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');  		
   		ga('create', 'UA-19050693-3', 'auto');
- 		//ga('require', 'displayfeatures');
 		ga('send', 'pageview');
 	</script>
 </head>
 
-<body align="center">
-
-	<div class="hero">
+<body>
+	<div id="hero">
 		<h1>Sticktron's Lab</h1>
 		<h2>iOS Jailbreak Goodies</h2>
 	</div>
 	
-	<div id="goblin" onclick="flip(this);">😈</div>
+	<div id="goblin" onclick="javascript:flip(this);">😈</div>
 	
-	<div class="links">
+	<div id="links">
 		<span><img src="images/Email.png"><a href="mailto:sticktron@hotmail.com">Email</a></span>
 		<span class="separator">|</span>
 		<span><img src="images/Twitter.png"><a href="http://www.twitter.com/sticktron" target="_blank">Twitter</a></span>
