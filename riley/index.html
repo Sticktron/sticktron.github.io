@@ -31,6 +31,7 @@
 		    -moz-osx-font-smoothing: grayscale;
 		    -moz-font-feature-settings: "liga", "kern";
 		}
+		
 		a {
 		    color: #ff0080;
 		}
@@ -59,9 +60,8 @@
 		/* <<< Start Here >>> */
 		
 		#container {
-			margin: 0;;
+			margin: 0;
 			min-width: 640px; 		/* optional; should be <= 960px */
-			/*text-align: center;		 center text within content block */
 		}
 		
 		#header {
@@ -90,34 +90,30 @@
 		#content {
 			margin: 60px;
 		}
-		#content div {
+		#content-left {
+			float: left;
+		}
+		#content-right {
+			float: right;
 			max-width: 640px;
-			margin-top: 1.5em;
-			margin: 1.5em auto 1.0em;
+			background-color: orange;
+		}
+		#content-right div {
+			margin: 0em 0 1.5em;
 		}
 		
-		#links {
-			text-align: center;
-			white-space: nowrap;
-			margin-top: 100px;
-			margin-bottom: 20px;
-			padding: 10px 0 0;
-			background-color: #f6f6f6;
+		div.clearfix { 
+			float: none;
 		}
-		#links img {
-			 vertical-align: middle;
-			 margin-bottom: 4px;
-			 margin-right: 4px;
-		}
-		#links .separator {
-			padding: 0 10px;
-		}
+		
+		#hero {
+			border: 2px solid #606069;
+		}		
 	</style>
 </head>
 
 <body>
 	<div id="container">
-		
 		<div id="header">
 			<h1>Header Text</h1>
 		</div>
@@ -127,23 +123,16 @@
 		</div>
 		
 		<div id="content">
+			<div id="content-left">
+				<img id="hero" src="images/TronCat.png"/>
+			</div>
 			
-			<!-- GO NUTS RIGHT HERE -->
+			<div id="content-right">
+				<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel dolor nisl. Fusce a diam in urna viverra egestas sed nec sem. Sed finibus cursus mi ac congue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae sapien neque. Fusce mattis mauris convallis urna aliquet tempor. Etiam pulvinar congue ligula, ut porttitor leo consequat at. Aliquam id ex ut lorem rutrum imperdiet nec eu nisl. Nam sit amet volutpat enim. Morbi id justo vel purus vestibulum vulputate eget quis erat. Nulla pretium, tortor pellentesque maximus placerat, lacus tortor fermentum tellus, sed cursus tellus eros sed eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla finibus mi vitae metus lobortis, non aliquam elit volutpat. Aliquam erat volutpat. Suspendisse convallis tortor vitae nulla pharetra scelerisque. Aenean at odio mattis, laoreet eros sit amet, ullamcorper ante.</div>
+				<div>Aenean quam lacus, faucibus a tortor cursus, varius ultrices tortor. Sed commodo feugiat nunc, eu porta ante posuere nec. Cras congue at enim et placerat. Ut tempus nulla dolor, vitae euismod neque euismod nec. Sed dui purus, porta in sapien ac, gravida egestas arcu. Sed condimentum, turpis nec viverra cursus, dui ante tincidunt neque, nec congue lectus metus et magna. Morbi arcu nibh, tincidunt quis dui vel, pulvinar pulvinar odio. Integer luctus ipsum ut sem venenatis consectetur. Etiam lobortis, urna tristique pellentesque commodo, lacus nunc cursus orci, at efficitur nunc lectus eleifend diam. Quisque vehicula consectetur libero, non mattis elit rhoncus sed. Pellentesque lectus ipsum, elementum ut lacus ac, pulvinar ornare metus. Vestibulum vehicula, dui eget varius ultrices, dui risus interdum ex, at accumsan nisi eros vel magna.</div>
+			</div>
 			
-			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel dolor nisl. Fusce a diam in urna viverra egestas sed nec sem. Sed finibus cursus mi ac congue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae sapien neque. Fusce mattis mauris convallis urna aliquet tempor. Etiam pulvinar congue ligula, ut porttitor leo consequat at. Aliquam id ex ut lorem rutrum imperdiet nec eu nisl. Nam sit amet volutpat enim. Morbi id justo vel purus vestibulum vulputate eget quis erat. Nulla pretium, tortor pellentesque maximus placerat, lacus tortor fermentum tellus, sed cursus tellus eros sed eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla finibus mi vitae metus lobortis, non aliquam elit volutpat. Aliquam erat volutpat. Suspendisse convallis tortor vitae nulla pharetra scelerisque. Aenean at odio mattis, laoreet eros sit amet, ullamcorper ante.</div>
-			<div>Aenean quam lacus, faucibus a tortor cursus, varius ultrices tortor. Sed commodo feugiat nunc, eu porta ante posuere nec. Cras congue at enim et placerat. Ut tempus nulla dolor, vitae euismod neque euismod nec. Sed dui purus, porta in sapien ac, gravida egestas arcu. Sed condimentum, turpis nec viverra cursus, dui ante tincidunt neque, nec congue lectus metus et magna. Morbi arcu nibh, tincidunt quis dui vel, pulvinar pulvinar odio. Integer luctus ipsum ut sem venenatis consectetur. Etiam lobortis, urna tristique pellentesque commodo, lacus nunc cursus orci, at efficitur nunc lectus eleifend diam. Quisque vehicula consectetur libero, non mattis elit rhoncus sed. Pellentesque lectus ipsum, elementum ut lacus ac, pulvinar ornare metus. Vestibulum vehicula, dui eget varius ultrices, dui risus interdum ex, at accumsan nisi eros vel magna.</div>
-			
-			
-			
-		</div>
-		
-		
-		<div id="links">
-			<span><img src="images/Email.png"><a href="mailto:sticktron@hotmail.com">Email</a></span>
-			<span class="separator">|</span>
-			<span><img src="images/Twitter.png"><a href="http://www.twitter.com/sticktron" target="_blank">Twitter</a></span>
-			<br/>
-			Made by Openro0t.
+			<div class="clearfix"></div>
 		</div>
 	</div>
 </body>
