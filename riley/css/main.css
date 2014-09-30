@@ -1,0 +1,153 @@
+/* sticktron.com CSS */
+
+html {
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #666666;
+    line-height: 1.7857;
+    font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+    font-style: normal;
+    font-weight: 200;
+	font-size: 1em;
+}
+body, input, textarea, select, button {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga", "kern";
+}
+a {
+    color: #0088cc;
+    color: #666666;
+}
+a:visited, a:link, a:active {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-size: 3.75em;
+    font-weight: 200;
+    line-height: 1.4;
+    letter-spacing: -1px;
+	margin: 0;
+}
+h2 {
+    font-size: 1.625em;
+    font-weight: 200;
+    line-height: 1.4em;
+    letter-spacing: -1px;
+    margin: 0;
+}
+
+
+/* Blocks */
+#container {
+	/*min-width: 960px;*/
+	min-width: 600px;
+	margin: 50px auto;
+	text-align: center;
+}
+div.section {
+	min-height: 400px;
+	margin-top: 40px;
+	background-color: #fff;
+}
+		
+
+/* bg gradient */
+.gradient {
+	background: url(images/gradient.png) 50% 0% repeat-x;
+	background-size: 1px 848.5px;
+}
+
+
+/* Header Row */
+#header {
+	min-height: 500px;
+}
+#goblin {
+	margin-top: 40px;
+}
+#goblin img {
+	width: 160px;
+	height: 160px;
+	border: 0;
+}
+#links {
+	white-space: nowrap;
+	margin-top: 60px;
+}
+#links img {
+	width: 12px;
+	height: 12px;	
+	vertical-align: middle;
+	margin-bottom: 2px;
+	margin-right: 6px;
+}
+#links .separator {
+	padding: 0 16px;
+	color: #ececec;
+}
+/**/
+
+
+/* CCMeters Row */
+#ccmeters {
+	background-color: #93f;
+}
+#ccmeters h1, #ccmeters h2 {
+	color: #fff;
+}
+
+
+/* Notific8 Row */
+#notific8 {
+	height: 930px;
+	background: url(images/notific8-hero-bg.png) 0% 100% repeat-x;
+	background-color: #fff;
+}
+#notific8 img {
+	width: 960px;
+	height: 810px; 
+}
+
+
+/* BigBubbles Row */
+#bubbles {
+	background-color: #ff2d55;
+	color: #fff;
+}
+
+
+/* Scraps Row */
+#scraps {
+	
+}
+#scraps ul {
+	width: 720px;
+	margin: 0;
+	margin: 50px auto 0;
+	padding: 0;
+	padding-left: 40px;
+	overflow: hidden; /* stops the floaters from collapsing their container */
+	background-color: yellow;
+}
+#scraps li {
+	display: block;
+	float: left;
+	width: 320px;
+	height: 480px;
+	margin: 0;
+	margin-right: 40px;
+	margin-bottom: 100px;
+	padding: 0;
+	background-color: #eeeeee;
+}
