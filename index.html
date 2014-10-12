@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Sticktron's Lab //WIP</title>
+	
+	<link rel="shortcut icon" href="favicon.ico"/>
+	<link rel="stylesheet" href="css/myriad-set-pro_200-400-600.css" type="text/css"/>
+	<link rel="stylesheet" href="css/main.css" type="text/css"/>
+
+	<script type="text/javascript">
+		var imageArray = [
+			"images/Goblin@2x.png",
+			"images/TronCat@2x.png"
+		];
+		var count = imageArray.length;
+		var num = 0;
+		
+		function gofancy(obj) {
+			num++;
+			if (num >= count) {
+				num = 0;
+			}
+			alert("going fancy: obj("+num+")");
+			obj.src = imageArray[num];
+		}
+	</script>
+	
+	<script type="text/javascript">
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  		
+  		ga('create', 'UA-19050693-3', 'auto');
+ 		//ga('require', 'displayfeatures');
+		ga('send', 'pageview');
+	</script>
+</head>
+
+<body>
+	<div id="container">		
+		
+		<div id="header" class="section">
+			<h1>Sticktron's Lab</h1>
+			
+			<h2>iOS Jailbreak Goodies</h2>
+			
+			<div id="goblin"><img src="images/Goblin@2x.png" onclick="gofancy(this);"></div>
+			
+			<div id="links">
+				<span><img src="images/Twitter@2x.png"><a href="http://www.twitter.com/sticktron" target="_blank">Twitter</a></span><span class="separator">|</span>
+				<span><img src="images/Email@2x.png"><a href="mailto:sticktron@hotmail.com">Email</a></span><span class="separator">|</span>
+				<span><img src="images/GitHub@2x.png"><a href="http://github.com/Sticktron" target="_blank">Source Code</a></span><span class="separator">|</span>
+				<span><img src="images/Reddit@2x.png"><a href="http://reddit.com/r/jailbreak" target="_blank">/r/jailbreak</a></span>
+				
+				<!--
+				<span class="separator">|</span>
+				<span><img src="images/PayPal.png"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=BKGYMJNGXM424&lc=CA&item_name=Donation%20to%20Sticktron&item_number=SticktronDotCom&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted" target="_blank">Donate</a></span>
+				-->				
+			</div>			
+		</div>
+		
+		
+		<!--+
+			| SITES
+			+-->
+		
+		<div id="notific8" class="section">
+			<div>
+				<img id="notific8_icon" src="images/Notific8-icon@2x.png"/>
+				<img id="notific8_logo" src="images/Notific8-logo@2x.png"/>
+			</div>
+			<h2>An iOS 8 makeover for the Notification Center.</h2>
+		</div>
+		
+		
+		
+		
+		<div id="ccmeters" class="section">
+			<h1>CCMeters</h1>
+			<h2>System meters for the Control Center and Notification Center.</h2>
+		</div>
+		
+		
+		
+		<div id="bubbles" class="section">
+			<h1>BigBubbles</h1>
+			<h2>Bigger image bubbles for the Messages App.</h2>
+		</div>
+
+		<div id="ahahah" class="section">
+			<h1>Ah!Ah!Ah!</h1>
+			<h2>Custom passcode alarm video.</h2>
+		</div>
+		
+		<div id="fcum" class="section">
+			<h1>FrontCam Un-Mirror</h1>
+			<h2>Flips the preview image from the front-facing camera.</h2>
+		</div>
+		
+		<div id="scraps" class="section">
+			<h1>Scraps</h1>
+			<h2>some ideas</h2>
+			
+			<ul>
+				<li>an idea</li>
+				<li>uno idea</li>
+				<li>la idea Ill</li>
+			</ul>
+		</div>
+		
+		
+		<!--+
+			| FOOTER
+			+-->
+		<div>
+			<br/><br/>(c) 2014 Sticktron.<br/>
+		</div>
+		
+	</div>
+</body>
+
+</html>

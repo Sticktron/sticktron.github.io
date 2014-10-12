@@ -8,7 +8,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #fff;
     color: #666666;
     line-height: 1.7857;
     font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
@@ -54,10 +54,12 @@ h2 {
 	min-width: 640px;
 	margin: 0 auto;
 	text-align: center;
+	background-color: #f0f0f0;
 }
 div.section {
 	padding-top: 40px;
 	min-height: 320px;
+	background-color: #fff;
 }
 
 
