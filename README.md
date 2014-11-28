@@ -1,4 +1,4 @@
 sticktron.github.io
 ===================
 
-//www
+www.sticktron.com

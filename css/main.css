@@ -33,17 +33,23 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 2.875em;
+    font-size: 2.4em;
     font-weight: 200;
-    line-height: 1.4em;
+    line-height: 1.2em;
     letter-spacing: -1px;
 	margin: 0;
 }
 h2 {
-    font-size: 1.25em;
+    font-size: 1.4em;
     font-weight: 200;
-    line-height: 1.2em;
-    letter-spacing: -1px;
+    line-height: 1.6em;
+/*    letter-spacing: -1px;*/
+    margin: 0;
+}
+h3 {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.8em;
     margin: 0;
 }
 
@@ -54,19 +60,30 @@ h2 {
 	min-width: 640px;
 	margin: 0 auto;
 	text-align: center;
-	background-color: #f0f0f0;
+	background-color: #eee;
 }
+
 div.section {
-	padding-top: 40px;
-	min-height: 320px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	min-height: 144px;
 	background-color: #fff;
+	margin-bottom: 1px;
 }
+
+#stripe {
+	min-height: 50px;
+	background-color: #000;
+}
+
+
 
 
 /* Header Row */
 #header {
 	margin: 0;
 	padding-top: 20px;
+	padding-bottom: 20px;
 }
 #header #goblin {
 	margin: 40px 0 40px;
@@ -100,70 +117,3 @@ div.section {
 
 
 
-
-/* CCMeters Row */
-#ccmeters {
-	background-color: #552dff;
-}
-#ccmeters h1, #ccmeters h2 {
-	color: #fff;
-}
-
-
-/* Notific8 Row */
-#notific8 {
-	background-color: #f0f0f0;
-}
-#notific8 #notific8_icon {
-	width: 60px;
-	height: 60px; 
-	margin-right: 20px;
-	vertical-align: middle;
-}
-#notific8 #notific8_logo {
-	height: 45px; 
-	vertical-align: middle;
-}
-#notific8 h2 {
-	margin-top: 20px;
-}
-
-
-
-/* BigBubbles Row */
-#bubbles {
-	background-color: #ff2d55;
-	color: #fff;
-}
-
-
-
-/* AhAhAh Row */
-#ahahah {
-	background-color: #552dff;
-	color: #fff;
-}
-
-
-/* Scraps Row */
-#scraps {}
-#scraps ul {
-	width: 720px;
-	margin: 0;
-	margin: 50px auto 0;
-	padding: 0;
-	padding-left: 40px;
-	overflow: hidden; /* stops the floaters from collapsing their container */
-	background-color: yellow;
-}
-#scraps li {
-	display: block;
-	float: left;
-	width: 320px;
-	height: 480px;
-	margin: 0;
-	margin-right: 40px;
-	margin-bottom: 100px;
-	padding: 0;
-	background-color: #eeeeee;
-}

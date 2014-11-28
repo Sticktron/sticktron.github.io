@@ -33,16 +33,16 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 3.75em;
+    font-size: 2.875em;
     font-weight: 200;
-    line-height: 1.4;
+    line-height: 1.4em;
     letter-spacing: -1px;
 	margin: 0;
 }
 h2 {
-    font-size: 1.625em;
+    font-size: 1.25em;
     font-weight: 200;
-    line-height: 1.4em;
+    line-height: 1.2em;
     letter-spacing: -1px;
     margin: 0;
 }
@@ -51,16 +51,46 @@ h2 {
 /* Blocks */
 #container {
 	/*min-width: 960px;*/
-	min-width: 600px;
-	margin: 50px auto;
+	min-width: 640px;
+	margin: 0 auto;
 	text-align: center;
+	background-color: #f0f0f0;
 }
 div.section {
-	min-height: 400px;
-	margin-top: 40px;
+	padding-top: 40px;
+	min-height: 320px;
 	background-color: #fff;
 }
-		
+
+
+/* Header Row */
+#header {
+	margin: 0;
+	padding-top: 20px;
+}
+#header #goblin {
+	margin: 40px 0 40px;
+}
+#header #goblin img {
+	width: 80px;
+	height: 80px;
+}
+#header #links {
+	white-space: nowrap;
+}
+#header #links img {
+	width:29px;
+	height:29px;
+	vertical-align: middle;
+	margin-bottom: 4px;
+	margin-right: 6px;
+}
+#header #links .separator {
+	padding: 0 16px;
+	color: #e0e0e0;
+}
+/**/
+
 
 /* bg gradient */
 .gradient {
@@ -69,39 +99,11 @@ div.section {
 }
 
 
-/* Header Row */
-#header {
-	min-height: 500px;
-}
-#goblin {
-	margin-top: 40px;
-}
-#goblin img {
-	width: 160px;
-	height: 160px;
-	border: 0;
-}
-#links {
-	white-space: nowrap;
-	margin-top: 60px;
-}
-#links img {
-	width: 12px;
-	height: 12px;	
-	vertical-align: middle;
-	margin-bottom: 2px;
-	margin-right: 6px;
-}
-#links .separator {
-	padding: 0 16px;
-	color: #ececec;
-}
-/**/
 
 
 /* CCMeters Row */
 #ccmeters {
-	background-color: #93f;
+	background-color: #552dff;
 }
 #ccmeters h1, #ccmeters h2 {
 	color: #fff;
@@ -110,14 +112,22 @@ div.section {
 
 /* Notific8 Row */
 #notific8 {
-	height: 930px;
-	background: url(images/notific8-hero-bg.png) 0% 100% repeat-x;
-	background-color: #fff;
+	background-color: #f0f0f0;
 }
-#notific8 img {
-	width: 960px;
-	height: 810px; 
+#notific8 #notific8_icon {
+	width: 60px;
+	height: 60px; 
+	margin-right: 20px;
+	vertical-align: middle;
 }
+#notific8 #notific8_logo {
+	height: 45px; 
+	vertical-align: middle;
+}
+#notific8 h2 {
+	margin-top: 20px;
+}
+
 
 
 /* BigBubbles Row */
@@ -127,10 +137,16 @@ div.section {
 }
 
 
-/* Scraps Row */
-#scraps {
-	
+
+/* AhAhAh Row */
+#ahahah {
+	background-color: #552dff;
+	color: #fff;
 }
+
+
+/* Scraps Row */
+#scraps {}
 #scraps ul {
 	width: 720px;
 	margin: 0;
