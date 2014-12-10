@@ -51,13 +51,13 @@
 		}
 		h3 {
 			margin: 0;
-			padding-top: 50px;
+			margin-top: 100px;
 		    font-size: 1em;
 		    font-weight: 200;
 		}
 				
 		div#container {
-			min-width: 750px;
+			min-width: 640px;
 			margin: 0 auto;
 			text-align: center;	
 		}
@@ -71,8 +71,8 @@
 		
 		/* HEADER SECTION */		
 		#header {
-			margin-top: 10px;
-			padding-bottom: 20px;
+			margin-top: 7px;
+			//padding-bottom: 20px;
 		}
 		#logo img {
 			width: 390px;
@@ -87,7 +87,7 @@
 		#links td {
 			margin: 0;
 			padding: 0 30px;
-			width: 60px;
+			white-space: nowrap;;
 		}
 		#links img {
 			width: 60px;
@@ -98,6 +98,7 @@
 		}
 		
 		/* TWEAK SECTIONS */
+		
 		.section .icon {
 			margin-bottom: 10px;
 		}
@@ -105,28 +106,83 @@
 			width: 60px;
 			height: 60px;
 		}
+		
 		#ahahah {
 			background-color: #262626; /* 15% */
 		}
 		#bigbubbles {
+			
 		}
 		#ccmeters {
 			background-color: #262626; /* 15% */
 		}
 		#notific8 {
+			
 		}
 		#fcum {
 			background-color: #262626; /* 15% */
+		}
+		#statusflow {
+			
 		}
 		#pagenames {
 			background-color: #262626; /* 15% */
 		}
 		
+		
+		/* OLD TWEAKS TABLE */
+		
+		#old {
+			//background-color: red;
+		}
+		#old table {
+			margin: 50px auto 0;
+		}
+		#old table td {
+			padding: 0 20px;
+			width: 50%;
+		}
+		#old table td.left {
+			border-right: 1px dashed #1f1f1f;
+		}
+		#old table tr.spacer {
+			height: 100px;
+		}
+		#old .smallicon {
+			display: inline;
+			margin-right: 7px;
+		}
+		#old .smallicon img {
+			width: 30px;
+			height: 30px;
+			vertical-align: middle;
+		}
+		#old table h1 {
+			display: inline;
+			font-size: 1.4em;
+			vertical-align: middle;
+		}
+		#old table h2 {
+			font-size: 1em;
+			margin-top: 3px;
+		}
+		#old table h3 {
+			font-size: 0.8em;
+			margin-top: 20px;
+		}
+		
+		/* LAST SECTION */
+		#end {
+			height: 50px;
+			color: #262626;
+		}
 	</style>
 </head>
 
 <body>
 	<div id="container">
+		
+		<!-- head section -->
 		
 		<div class="section" id="header">
 			<div id="logo"><img src="images/logo.png"></div>
@@ -135,53 +191,55 @@
 			<table id="links" border="0" cellspacing="0" cellpadding="0">
 				<tr>
 					<td><a href="http://www.twitter.com/sticktron" target="_blank">
-						<img src="images/icons/twitter-120.png" alt="Twitter"/>Twitter</a></td>
+						<img src="images/icons/twitter-120.png" alt="Twitter"/><br/>Twitter</a></td>
 						
 					<td><a href="mailto:sticktron@hotmail.com">
-						<img src="images/icons/email-120.png" alt="Email"/>Email</a></td>
+						<img src="images/icons/email-120.png" alt="Email"/><br/>Email</a></td>
 						
 					<td><a href="http://github.com/Sticktron" target="_blank">
-						<img src="images/icons/github-120.png" alt="GitHub"/>GitHub</a></td>
+						<img src="images/icons/github-120.png" alt="GitHub"/><br/>Source Code</a></td>
 						
 					<td><a href="http://cydia.sticktron.com">
-						<img src="images/icons/repo-120.png" alt="Repo"/>Repo</a></td>
+						<img src="images/icons/repo-120.png" alt="Repo"/><br/>Repo</a></td>
 				</tr>
-			</table>
-			
+			</table>			
 			<div style="font-size:0.8em; color:#808080">&lt; under construction &gt;</div>
 		</div>
 		
+		
+		<!-- current tweaks -->
 		
 		<div id="ahahah" class="section">
 			<div class="icon"><img src="images/icons/ahahah-120.png" alt="Ah Ah Ah"></div>
 			<h1>Ah! Ah! Ah!</h1>
 			<h2>A customizable unlock error alarm, inspired by Jurassic Park.</h2>
-			<h3>Designed for iOS 7.&nbsp;&nbsp;Available for free on Cydia.</h3>
+			<h3>Designed for iOS 7.&nbsp;&nbsp;Available for free in Cydia.</h3>
 		</div>		
 		
 		<div id="bigbubbles" class="section">
 			<div class="icon"><img src="images/icons/bigbubbles-120.png" alt="BigBubbles"></div>
 			<h1>BigBubbles</h1>
 			<h2>Bigger image bubbles for the Messages app.</h2>
-			<h3>Designed for iOS 6-7.&nbsp;&nbsp;Available for free on Cydia.</h3>
+			<h3>Designed for iOS 6-7.&nbsp;&nbsp;Available for free in Cydia.</h3>
 		</div>
 
 		<div id="ccmeters" class="section">
 			<div class="icon"><img src="images/icons/ccmeters-120.png" alt="CCMeters"></div>
 			<h1>CCMeters</h1>
 			<h2>System meters for the Control Center and Notification Center.</h2>
-			<h3>Designed for iOS 7.&nbsp;&nbsp;Available for free on Cydia.</h3>
+			<h3>Designed for iOS 7.&nbsp;&nbsp;Available for free in Cydia.</h3>
 		</div>
-		
-		<!-- discontinued -->
+				
 		<div id="notific8" class="section">
 			<div class="icon"><img src="images/icons/notific8-120.png" alt="Notific8"></div>
 			<h1>Notific8</h1>
 			<h2>An iOS 8 makeover for the Notification Center.</h2>
-			<h3>Designed for iOS 7.&nbsp;&nbsp;Available for free on Cydia.</h3>
+			<h3>Designed for iOS 7.&nbsp;&nbsp;Available for free in Cydia.</h3>
 		</div>
 		
+		
 		<!-- beta -->
+		
 		<div id="fcum" class="section">
 			<div class="icon"><img src="images/icons/fcum-120.png" alt="Front Camera Un-Mirror"></div>
 			<h1>Front Camera Un-Mirror</h1>
@@ -189,36 +247,81 @@
 			<h3>Designed for iOS 7.&nbsp;&nbsp;Beta version on my repo.</h3>
 		</div>
 		
+		
 		<!-- coming soon -->
+		
 		<div id="statusflow" class="section">
 			<div class="icon"><img src="images/icons/unknown-120.png" alt="StatusFlow"></div>
 			<h1>StatusFlow</h1>
 			<h2>A live spectrum analyzer for the status bar.</h2>
-			<h3>Upcoming tweak.&nbsp;&nbsp;Designed for iOS 8.</h3>
+			<h3>Upcoming tweak.</h3>
 		</div>
+		
 		<div id="pagenames" class="section">
 			<div class="icon"><img src="images/icons/unknown-120.png" alt="PageNames"></div>
 			<h1>PageNames</h1>
-			<h2>Give your page dots some personality.</h2>
-			<h3>Upcoming tweak.&nbsp;&nbsp;Designed for iOS 8.</h3>
+			<h2>Cuz page dots are so meh.</h2>
+			<h3>Upcoming tweak.</h3>
 		</div>
 		
-		<!-- old
-		<div id="weestats" class="section">
-			<div class="smallicon"><img src="images/icons/weestats-60.png" alt="WeeStats"></div>
-			<h1>WeeStats for iOS 5</h1>
-			<h2>System meters in the Notification Center..</h2>
-			<h3>Discontinued.&nbsp;&nbsp;&nbsp;&nbsp;Designed for iOS 5.</h3>
-		</div>
-		<div id="retinasizer" class="section">
-			<div class="smallicon"><img src="images/icons/retinasizer-120.png" alt="Retinasizer"></div>
-			<h1>Retinasizer</h1>
-			<h2>Forces OpenGL apps/games to render at "Retina" resolution.</h2>
-			<h3>Discontinued.&nbsp;&nbsp;&nbsp;&nbsp;Designed for iOS 5.</h3>
-		</div>
-		-->
 		
-		<div id="blank" class="section">?</div>
+		<!-- old -->
+		
+		<div id="old" class="section">
+			
+			<h1>Old & Misc.</h1>
+			
+			<table border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td class="left">
+					<div class="smallicon"><img src="images/icons/weestats-60.png" alt="WeeStats"></div>
+					<h1>WeeStats</h1>
+					<h2>System meters in the Notification Center.</h2>
+					<h3>Designed for iOS 5.&nbsp;&nbsp;Discontinued.</h3>
+				</td>
+				<td>
+					<div class="smallicon"><img src="images/icons/retinasizer-60.png" alt="Retinasizer"></div>
+					<h1>Retinasizer</h1>
+					<h2>Forces OpenGL apps/games to render in "Retina" resolution.</h2>
+					<h3>Designed for iOS 5.&nbsp;&nbsp;Discontinued.</h3>
+				</td>
+			</tr>
+			<tr class="spacer"><td class="left"></td><td></td></tr>
+			<tr>
+				<td class="left">
+					<div class="smallicon"><img src="images/icons/-60.png" alt=""></div>
+					<h1>HiddenSettings7 Icon</h1>
+					<h2>Launch Apple's internal settings app from an icon.</h2>
+					<h3>Designed for iOS 7.&nbsp;&nbsp;Available for free in Cydia.</h3>
+				</td>
+				<td>
+					<div class="smallicon"><img src="images/icons/-60.png" alt=""></div>
+					<h1>code128</h1>
+					<h2>Adds support to the Ebay app for "code 128" barcodes.</h2>
+					<h3>Designed for iOS 7.</h3>
+				</td>
+			</tr>
+			<tr class="spacer"><td class="left"></td><td></td></tr>
+			<tr>
+				<td class="left">
+					<div class="smallicon"><img src="images/icons/-60.png" alt=""></div>
+					<h1>SlackOpenBinaries</h1>
+					<h2>Allows the Slack app to open binary attachments.</h2>
+					<h3>Designed for iOS 7.</h3>
+				</td>
+				<td>
+					<div class="smallicon"><img src="images/icons/-60.png" alt=""></div>
+					<h1>Schedules Cydget</h1>
+					<h2>Displays alternating class schedule images on lock screen.</h2>
+					<h3>Designed for iOS 7.</h3>
+				</td>
+			</tr>
+			</table>
+		</div>
+		
+		
+		
+		<div id="end" class="section">hmm, what else?</div>
 		
 		<div>(c) 2014 Sticktron.</div>
 	</div>
