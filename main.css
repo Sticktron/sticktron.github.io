@@ -26,27 +26,25 @@ a {
     text-decoration: none;
 }
 a:hover, a:active {
-    color: #8000ff;
-    color: #ff0080;
-    color: #ccc;
+ 	text-decoration: underline;
 }
 h1 {
 	margin: 0;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 200;
-    //line-height: 1em;
-    //letter-spacing: -1px;
 }
 h2 {
 	margin: 0;
-    font-size: 1.4em;
+    font-size: 1.5em;
+    //font-size: 1.6em;
     font-weight: 200;
-    //line-height: 1em;
+    line-height: 1;
+	color: #b3b3b3;
 }
 h3 {
 	margin: 0;
 	margin-top: 100px;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 200;
 }
 p {
@@ -60,42 +58,48 @@ p {
 }
 
 
-#header {}
-#header img {
-	width: 30px;
-	height: 30px;
-	display: block;
-	margin: 10px auto;
-}
-
-
 .section {
-	margin-bottom: 7px;
+	margin-bottom: 6px;
 	padding: 50px 0;
 	background-color: #1a1a1a;
     line-height: 1.5;
 }
 .section .icon {
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 .section .icon img {
 	width: 60px;
 	height: 60px;
 }
+.oldsection {
+	background-color: #202020;
+}
+.newsection {
+	background-color: #262626;
+}
 
 
 /* Hero section */
 #hero {
+	padding-top: 20px;
 	padding-bottom: 20px;
+}
+#hero #dex img {
+	width: 30px;
+	height: 30px;
+}
+#hero #logo {
+	margin-top: 25px;
+	margin-bottom: 5px;
 }
 #hero #logo img {
 	width: 400px;
 	height: 64px;
 }
 #hero #byline {
-	margin-top: 6px;
-	font-size: 1.4em;
+	font-size: 1.75em;
 	font-weight: 200;
+	color: #b3b3b3;
 }
 #hero #links {
 	margin: 50px auto;
@@ -110,7 +114,8 @@ p {
 	height: 60px;
 }
 #hero #links a {
-	font-size: 0.9em;
+	//font-size: 0.9em;
+	font-weight: 200;
 }
 
 
