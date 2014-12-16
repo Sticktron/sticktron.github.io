@@ -38,13 +38,13 @@ h2 {
     font-size: 1.5em;
     //font-size: 1.6em;
     font-weight: 200;
-    line-height: 1;
+    //line-height: 1;
 	color: #b3b3b3;
 }
 h3 {
 	margin: 0;
-	margin-top: 100px;
-    font-size: 1.2em;
+	//margin-top: 100px;
+    font-size: 1.1em;
     font-weight: 200;
 }
 p {
@@ -53,7 +53,7 @@ p {
 
 
 #container {
-	min-width: 768px;
+	min-width: 800px;
 	text-align: center;
 }
 
@@ -116,6 +116,16 @@ p {
 #hero #links a {
 	//font-size: 0.9em;
 	font-weight: 200;
+}
+
+
+/* Ah Ah Ah section */
+#ahahah .screenshots {
+	margin: 50px 0;
+}
+#ahahah .screenshots img {
+	width: 800px;
+	height: 550px;
 }
 
 
