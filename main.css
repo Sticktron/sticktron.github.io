@@ -71,6 +71,10 @@ p {
 	width: 60px;
 	height: 60px;
 }
+.section .screenshots {
+	margin: 50px 0;
+}
+
 .oldsection {
 	background-color: #202020;
 }
@@ -84,17 +88,9 @@ p {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-#hero #dex img {
-	width: 30px;
-	height: 30px;
-}
 #hero #logo {
 	margin-top: 25px;
 	margin-bottom: 5px;
-}
-#hero #logo img {
-	width: 400px;
-	height: 64px;
 }
 #hero #byline {
 	font-size: 1.75em;
@@ -109,41 +105,9 @@ p {
 	padding: 0 32px;
 	white-space: nowrap;;
 }
-#hero #links img {
-	width: 60px;
-	height: 60px;
-}
 #hero #links a {
 	//font-size: 0.9em;
 	font-weight: 200;
-}
-
-
-/* Ah Ah Ah section */
-#ahahah .screenshots {
-	margin: 50px 0;
-}
-#ahahah .screenshots img {
-	width: 800px;
-	height: 550px;
-}
-
-/* Big Bubbles section */
-#bigbubbles .screenshots {
-	margin: 50px 0;
-}
-#bigbubbles .screenshots img {
-	width: 800px;
-	height: 725px;
-}
-
-/* CCMeters section */
-#ccmeters .screenshots {
-	margin: 50px 0;
-}
-#ccmeters .screenshots img {
-	width: 800px;
-	height: 550px;
 }
 
 
