@@ -74,7 +74,6 @@ p {
 .section .screenshots {
 	margin: 50px 0;
 }
-
 .oldsection {
 	background-color: #202020;
 }
@@ -83,13 +82,13 @@ p {
 }
 
 
-/* Hero section */
+/* Home section */
 #hero {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	//padding-top: 20px;
+	//padding-bottom: 20px;
 }
 #hero #logo {
-	margin-top: 25px;
+	margin-top: 50px;
 	margin-bottom: 5px;
 }
 #hero #byline {
@@ -98,7 +97,7 @@ p {
 	color: #b3b3b3;
 }
 #hero #links {
-	margin: 50px auto;
+	margin: 80px auto;
 }
 #hero #links td {
 	margin: 0;
