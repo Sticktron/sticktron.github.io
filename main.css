@@ -83,30 +83,34 @@ p {
 
 
 /* Home section */
-#hero {
-	//padding-top: 20px;
-	//padding-bottom: 20px;
+#hero #dex {
 }
 #hero #logo {
-	margin-top: 50px;
-	margin-bottom: 5px;
+	margin-top: 40px;
 }
 #hero #byline {
+	margin-top: 10px;
 	font-size: 1.75em;
 	font-weight: 200;
 	color: #b3b3b3;
 }
 #hero #links {
-	margin: 80px auto;
+	margin-top: 50px;
+}
+#hero #links table {
+	margin: 0 auto;
 }
 #hero #links td {
 	margin: 0;
 	padding: 0 32px;
-	white-space: nowrap;;
+	white-space: nowrap;
 }
 #hero #links a {
 	//font-size: 0.9em;
 	font-weight: 200;
+}
+#hero #yalu {
+	margin-top: 40px;
 }
 
 
@@ -150,14 +154,10 @@ p {
 
 
 /* end roll */
-#mystery {
-	color: #404040;
-	padding: 200px 0;
-}
 #end {
-	padding: 10px 0;
-	font-size: 0.9em;
-	color: #fff;
+	padding: 50px 0 20px 0;
+	font-size: 0.8em;
+	color: #b3b3b3;
 }
 
 
