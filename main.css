@@ -30,20 +30,17 @@ a:hover, a:active {
 }
 h1 {
 	margin: 0;
-    font-size: 2.5em;
+    font-size: 2.4em;
     font-weight: 200;
 }
 h2 {
 	margin: 0;
-    font-size: 1.5em;
-    //font-size: 1.6em;
+    font-size: 1.4em;
     font-weight: 200;
-    //line-height: 1;
 	color: #b3b3b3;
 }
 h3 {
 	margin: 0;
-	//margin-top: 100px;
     font-size: 1.1em;
     font-weight: 200;
 }
@@ -51,18 +48,23 @@ p {
 	margin: 1em;
 }
 
+/*body {
+	background-color: #1a1a1a;
+}*/
 
 #container {
 	min-width: 800px;
 	text-align: center;
 }
 
-
 .section {
 	margin-bottom: 6px;
 	padding: 50px 0;
 	background-color: #1a1a1a;
     line-height: 1.5;
+}
+.dark-section {
+	background-color: #000000;
 }
 .section .icon {
 	margin-bottom: 5px;
@@ -74,23 +76,20 @@ p {
 .section .screenshots {
 	margin: 50px 0;
 }
-.oldsection {
-	background-color: #202020;
-}
-.newsection {
-	background-color: #262626;
-}
 
 
 /* Home section */
+#hero {
+	padding-top : 40px;
+}
 #hero #dex {
 }
 #hero #logo {
-	margin-top: 40px;
+	margin-top: 30px;
 }
 #hero #byline {
-	margin-top: 10px;
-	font-size: 1.75em;
+	margin-top: 5px;
+	font-size: 1.6em;
 	font-weight: 200;
 	color: #b3b3b3;
 }
@@ -106,7 +105,7 @@ p {
 	white-space: nowrap;
 }
 #hero #links a {
-	//font-size: 0.9em;
+	/*font-size: 0.9em;*/
 	font-weight: 200;
 }
 #hero #yalu {
@@ -114,50 +113,9 @@ p {
 }
 
 
-
-/* old tweaks section ------------------ */
-#old table {
-	margin: 50px auto 0;
-}
-#old table td {
-	padding: 0 20px;
-	width: 50%;
-}
-#old table td.left {
-	border-right: 1px dashed #1f1f1f;
-}
-#old table tr.spacer {
-	height: 100px;
-}
-#old .smallicon {
-	display: inline;
-	margin-right: 7px;
-}
-#old .smallicon img {
-	width: 30px;
-	height: 30px;
-	vertical-align: middle;
-}
-#old table h1 {
-	display: inline;
-	font-size: 1.4em;
-	vertical-align: middle;
-}
-#old table h2 {
-	font-size: 1em;
-	margin-top: 3px;
-}
-#old table h3 {
-	font-size: 0.8em;
-	margin-top: 20px;
-}
-
-
 /* end roll */
 #end {
-	padding: 50px 0 20px 0;
+	padding: 30px 0 30px 0;
 	font-size: 0.8em;
-	color: #b3b3b3;
+	color: #fff;
 }
-
-
