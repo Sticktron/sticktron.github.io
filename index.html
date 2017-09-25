@@ -1,166 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<title>Sticktron's Lab</title>
-	<link rel="shortcut icon" href="favicon.ico"/>
-	<link rel="stylesheet" href="myriad-set-pro_200-400-600.css" type="text/css"/>
-	<link rel="stylesheet" href="main.css" type="text/css"/>
+    <meta charset="utf-8">
+    
+    <title>Sticktron's Lab</title>
+    <meta name="description" content="Sticktron's Lab">
+    <meta name="author" content="Sticktron">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- <meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
+    
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    
+    <!-- Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500" rel="stylesheet"/> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"/> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&effect=anaglyph" rel="stylesheet"/>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
-	<div id="container">
-		
-		<!--+
-			| Hero section.
-			+-->
-		<div id="hero" class="section">
-			<div id="dex"><img src="images/icons/dex-60.png" width="30" height="30"></div>
-			<div id="logo"><img src="images/logo.png" width="400" height="64"></div>
-			<div id="byline">Tweaks and things for jailbroken iOS users.</div>
-			
-			<!-- links -->
-			<div id="links">
-				<table border="0" cellspacing="0" cellpadding="0">
-				<tr>
-					<td><a href="http://www.twitter.com/sticktron" target="_blank">
-						<img src="images/icons/twitter-120.png" alt="Twitter" width="60" height="60"/><br/>Twitter</a></td>
-						
-					<td><a href="mailto:sticktron@hotmail.com">
-						<img src="images/icons/email-120.png" alt="Email" width="60" height="60"/><br/>Email</a></td>
-						
-					<td><a href="http://github.com/Sticktron" target="_blank">
-						<img src="images/icons/github-120.png" alt="GitHub" width="60" height="60"/><br/>Source Code</a></td>
-						
-					<td><a href="http://sticktron.github.io/repo">
-						<img src="images/icons/repo-120.png" alt="Repo" width="60" height="60"/><br/>Repo</a></td>
-				</tr>
-				</table>
-			</div>
-			
-			<!-- yalu b3 (tsmc) ipas -->
-			<!--
-			<div id="yalu">
-				<img src="images/icons/unknown-120.png" width="10" height="10">&nbsp;&nbsp;<a href="https://mega.nz/#!DZs3RZSK!08kgZfPIZwdTJGFBq3djm-HFy9adk6hFHDYtNEW6ZhE">Download YaluX b3 for TSMC iPhone 6s/6s+ (N71mAP, N66mAP) - iOS 10.1/10.1.1</a><br/>
-				<img src="images/icons/unknown-120.png" width="10" height="10">&nbsp;&nbsp;<a href="https://mega.nz/#!7Yl0wbxJ!8Ui-y_NcnjqwErGH4PuYZTQd_PE1Jun3cM_cD93SENU">Download YaluX b3 for TSMC iPhone SE (N69AP) - iOS 10.1/10.1.1</a><br/>
-			</div>
-			-->
+<div class="container">
+        
+    <header>
+        <div class="u-pull-left">
+            <img class="header-icon" src="images/Icon.png" height="40"/><!--80x80-->
+            <img class="header-logo" src="images/Lab-black.png" height="40"/><!--382x80-->
+        </div>
+        <div class="u-pull-right">
+            <!-- 48x48
+            <a id="moon-button" href="#"><img src="images/Moon.png"/>
+            -->
+        </div>
+        <div class="u-cf"/>
+    </header>
+    
+    <section id="hero">
+        <div class="hero-title fadein">
+            <img src="images/Welcome.png"/><!--980x276-->
+        </div>
+        
+        <div class="links">
+			<table border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>
+                    <a href="mailto:sticktron@hotmail.com">
+					<img src="images/Email.png" alt="Email"/><br/>Email</a>
+                </td>
+                <td>
+                    <a href="http://www.twitter.com/sticktron" target="_blank">
+					<img src="images/Twitter.png" alt="Twitter"/><br/>Twitter</a>
+                </td>
+				<td>
+                    <a href="http://github.com/Sticktron" target="_blank">
+					<img src="images/GitHub.png" alt="GitHub"/><br/>Source Code</a>
+                </td>
+				<td>
+                    <a href="http://repo.sticktron.net">
+					<img src="images/Cydia.png" alt="Repo"/><br/>Repo</a>
+                </td>
+			</tr>
+			</table>
 		</div>
-		
-		
-		<!--+
-			| Project sections.
-			+-->
-			
-		<div id="darkmessages" class="section dark-section">
-			<div class="icon"><img src="images/icons/unknown-120.png" alt="DarkMessages" width="60" height="60"></div>
-			<h1>DarkMessages</h1>
-			<h2>Dark mode for the Messages app.</h2>
-			<h3>For iOS 10.&nbsp;&nbsp;Free in Cydia.</h3>
-		</div>
-			
-		<div id="ncmeters" class="section">
-			<div class="icon"><img src="images/icons/ncmeters-120.png" alt="NCMeters" width="60" height="60"></div>
-			<h1>NCMeters</h1>
-			<h2>System meters for the Notification Center.</h2>
-			<div class="screenshots">
-				<!-- <img src="images/ccmeters-hero-row1.jpg" width="800" height="550"><br/>
-				<img src="images/ccmeters-hero-row2.jpg" width="600" height="550"> -->
-			</div>
-			<h3>For iOS 7 - 8.&nbsp;&nbsp;Free in Cydia.</h3>
-			<h3><span style="font-size:3em; color:#8000FF; vertical-align:middle">&#x022C6;</span> <i>NCMeters9 for iOS 9/10 is on my repo.</i> <span style="font-size:3em; color:#8000FF; vertical-align:middle">&#x022C6;</span></h3>
-		</div>
-		
-		<div id="ccmeters" class="section">
-			<div class="icon"><img src="images/icons/ccmeters-120.png" alt="CCMeters" width="60" height="60"></div>
-			<h1>CCMeters</h1>
-			<h2>System meters for the Control Center.</h2>
-			<div class="screenshots">
-				<img src="images/ccmeters-hero-row1.jpg" width="800" height="550"><br/>
-				<img src="images/ccmeters-hero-row2.jpg" width="600" height="550">
-			</div>
-			<h3>For iOS 7 - 9.&nbsp;&nbsp;Free in Cydia.</h3>
-		</div>
-		
-		<div id="ahahah" class="section">
-			<div class="icon"><img src="images/icons/ahahah-120.png" alt="Ah Ah Ah" width="60" height="60"></div>
-			<h1>Ah! Ah! Ah!</h1>
-			<h2>A customizable unlock error alarm, inspired by Jurassic Park.</h2>
-			<div class="screenshots">
-				<img src="images/ahahah-hero.jpg" width="800" height="550">
-			</div>
-			<h3>For iOS 7 - 8.&nbsp;&nbsp;Free in Cydia.</h3>
-			<h3><span style="font-size:3em; color:#8000FF; vertical-align:middle">&#x022C6;</span> <i>v2.0-beta for iOS 9 is on my repo.</i> <span style="font-size:3em; color:#8000FF; vertical-align:middle">&#x022C6;</span></h3>
-		</div>
-		
-		<div id="fcum" class="section dark-section">
-			<div class="icon"><img src="images/icons/fcum-120.png" alt="Front Camera Un-Mirror" width="60" height="60"></div>
-			<h1>Front Camera Un-Mirror</h1>
-			<h2>Flips the preview image from the front-facing camera.</h2>
-			<h3>For iOS 7 - 10.&nbsp;&nbsp;Free in Cydia.</h3>
-		</div>
-		
-		<div id="wulock" class="section">
-			<div class="icon"><img src="images/icons/unknown-120.png" alt="Wu-Lock" width="60" height="60"></div>
-			<h1>Wu-Lock</h1>
-			<h2>Custom Lockscreen glyphs for the children.</h2>
-			<h3>For iOS 8 - 9.&nbsp;&nbsp;Free in Cydia.</h3>
-		</div>
-		
-		<div id="bigbubbles" class="section">
-			<div class="icon"><img src="images/icons/bigbubbles-120.png" alt="BigBubbles" width="60" height="60"></div>
-			<h1>BigBubbles</h1>
-			<h2>Bigger image bubbles for the Messages app.</h2>
-			<div class="screenshots">
-				<img src="images/bigbubbles-hero.jpg" width="600" height="550">
-			</div>
-			<h3>For iOS 6 - 7.&nbsp;&nbsp;Free in Cydia.</h3>
-		</div>
-		
-		<div id="notific8" class="section">
-			<div class="icon"><img src="images/icons/notific8-120.png" alt="Notific8" width="60" height="60"></div>
-			<h1>Notific8</h1>
-			<h2>An iOS 8 makeover for the Notification Center.</h2>
-			<div class="screenshots">
-				<img src="images/notific8-hero.jpg" width="300" height="550">
-			</div>
-			<h3>For iOS 7.&nbsp;&nbsp;Free in Cydia.</h3>
-		</div>
-		
-		
-		<!--+
-			| Oldies
-			+-->
-		<div id="weestats" class="section dark-section">
-			<div class="icon"><img src="images/icons/weestats-120.png" alt="WeeStats" width="60" height="60"></div>
-			<h1>WeeStats</h1>
-			<h2>System meters in the Notification Center.</h2>
-			<h3>For iOS 5.</h3>
-		</div>
-		
-		<div id="retinasizer" class="section">
-			<div class="icon"><img src="images/icons/retinasizer-120.png" alt="Retinasizer" width="60" height="60"></div>
-			<h1>Retinasizer</h1>
-			<h2>Forces OpenGL apps/games to render in "Retina" resolution.</h2>
-			<h3>For iOS 5.</h3>
-		</div>
-		
-		<div id="end">
-			&copy; 2017 Sticktron.
-		</div>
-
-	</div>
-	
-	
-	<!-- GA -->
-	<script type="text/javascript">
-  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  		ga('create', 'UA-19050693-3', 'auto');
-		ga('send', 'pageview');
-	</script>
+    </section>
+    
+    <section id="tweaks">
+        <h6 class="title">Software</h6>
+        <p>Tweaks (runtime modifications) for jailbroken iOS devices.</p>
+        
+        <div class="row first-row">
+            <div class="tweak one-half column">
+                <p class="tweak-name">DarkMessages</p>
+                <p>iOS 10</p>
+                <p>Description of the tweak goes here.</p>
+            </div>
+            <div class="tweak one-half column">
+                <p class="tweak-name">LockGlyph X</p>
+                <p>iOS 10</p>
+                <p>Description of the tweak goes here.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="tweak one-half column">
+                <p class="tweak-name">Croutons</p>
+                <p>iOS 9 - 10</p>
+                <p>Description of the tweak goes here.</p>
+            </div>
+            <div class="tweak one-half column">
+                <p class="tweak-name">SSHIcon</p>
+                <p>iOS 7 - 10</p>
+                <p>Description of the tweak goes here.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="tweak one-half column">
+                <p class="tweak-name">Ah!Ah!Ah!</p>
+                <p>iOS 7 - 10</p>
+                <p>Description of the tweak goes here.</p>
+            </div>
+            <div class="tweak one-half column">
+                <p class="tweak-name">FrontCamUnMirror</p>
+                <p>iOS 7 - 10</p>
+                <p>Description of the tweak goes here.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="tweak one-half column">
+                <p class="tweak-name">NCMeters 9</p>
+                <p>iOS 9 - 10</p>
+                <p>Description of the tweak goes here.</p>
+            </div>
+            <div class="tweak one-half column">
+                <p class="tweak-name">ReacherSwitcher</p>
+                <p>iOS 10</p>
+                <p>Description of the tweak goes here.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="tweak one-half column">
+                <p class="tweak-name">Wu-Lock</p>
+                <p>iOS 8 - 9</p>
+                <p>Description of the tweak goes here.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="tweak one-half column">
+                <p class="tweak-name">CCMeters</p>
+                <p>iOS 7 - 8</p>
+                <p>Description of the tweak goes here.</p>
+            </div>
+            <div class="tweak one-half column">
+                <p class="tweak-name">NCMeters</p>
+                <p>iOS 7 - 8</p>
+                <p>Description of the tweak goes here.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="tweak one-half column">
+                <p class="tweak-name">BigBubbles</p>
+                <p>iOS 7</p>
+                <p>Description of the tweak goes here.</p>
+            </div>
+            <div class="tweak one-half column">
+                <p class="tweak-name">Notific8</p>
+                <p>iOS 7</p>
+                <p>Description of the tweak goes here.</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="tweak one-half column">
+                <p class="tweak-name">WeeStats</p>
+                <p>iOS 5</p>
+                <p>Description of the tweak goes here.</p>
+            </div>
+            <div class="tweak one-half column">
+                <p class="tweak-name">Retinasizer</p>
+                <p>iOS 5</p>
+                <p>Description of the tweak goes here.</p>
+            </div>
+        </div>
+    </section>
+    
+    <hr/>
+    
+    <section id="about">
+        <h6 class="title">About</h6>
+        <p>
+            I make things,<br/>
+            I make things,<br/>
+        </p>
+        <p>
+            Test of <b>bold</b> text, <em>italic</em> text, and <a href="#">link</a> text.
+        </p>
+    </section>
+    
+    <hr/>
+    
+    <footer>
+        <p>Made with haste by Sticktron.</p>
+        
+        <!-- <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.getskeleton.com" data-text="Skeleton - A dead simple, responsive boilerplate." data-via="dhg" data-related="dhg">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> -->
+        
+        <!-- <iframe src="http://ghbtns.com/github-btn.html?user=sticktron&repo=croutons&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+        <iframe src="http://ghbtns.com/github-btn.html?user=sticktron&repo=croutons&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe> -->
+    </footer>
+    
+    </div><!-- end content container -->
+    
+        
+    <script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-19050693-3']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        }
+    )();
+    </script>
+    
+    <!-- Optional JavaScript -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>     -->
 </body>
 
 </html>

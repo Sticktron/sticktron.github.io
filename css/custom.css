@@ -1,0 +1,282 @@
+html {}
+    
+body {
+    background-color: #fff;
+    /*background-color: #f00;*/
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+hr {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-width: 0;
+    border-top: 1px solid #f0f0f0;
+}
+
+a {
+    /*color: #0070c9;*/
+    color: #8000ff;
+    text-decoration: none;
+}
+a:hover {
+    color: #ff0080;
+    text-decoration: underline;
+}
+
+
+
+.container {
+    /*background-color: #ff8000;*/
+    padding-left: 0;
+    padding-right: 0;
+}
+@media (min-width: 550px) {
+    .container {
+        min-width: 560px;
+        width: 90%;
+    }
+}
+
+
+
+/*
+ * Header Bar
+ */
+ 
+header {
+    /*background-color: #00ff00;*/
+    margin: 0;
+    padding: 0.5rem 1rem 0rem 1rem;
+}
+header .header-icon {
+    margin-right: 1rem;
+}
+header a#moon-button {
+    display: block;
+    margin-top: 10px;
+    opacity: 0.5;
+    
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+}
+header #moon-button:hover {
+    opacity: 1;
+}
+header #moon-button img {
+    height: 24px;
+}
+
+@media (min-width: 550px) {
+    header {
+        padding: 1.5rem 0rem 1rem 0rem;
+    }
+}
+
+
+
+/*
+ * Content Sections
+ */
+section {
+    /*background-color: #0f0;*/
+    margin: 0 0 4rem 0;
+    padding: 1rem;
+}
+section .title {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 550px) {
+    section {
+        margin: 0 0 4rem 0;
+        padding: 1rem 0;
+    }
+}
+
+
+/*
+ * Section - Hero
+ */
+#hero {
+    height: 300px;
+    background-image: url("../images/crazymiley.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    text-align: center;
+}
+#hero .hero-title {
+    margin-top: 6rem;
+}
+#hero .hero-title img {
+    width: 300px;
+}
+#hero .links {
+    /*background-color: #8000ff;*/
+    margin-top: 4rem;
+}
+#hero .links table {
+    margin: 0 auto;
+}
+#hero .links td {
+    text-align: center;
+    width: 60px;
+    border: 0;
+}
+#hero .links a {
+    color: #ffffff00;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 0.8rem;
+    
+    transition: color .20s ease-in-out;
+    -moz-transition: color .20s ease-in-out;
+    -webkit-transition: color .20s ease-in-out;
+}
+#hero .links img {
+    height: 32px;
+}
+#hero .links a:hover {
+    color: rgba(255, 255, 255, 0.80);
+}
+
+@media (min-width: 550px) {
+    #hero {
+        height: 480px;
+        background-size: cover;
+        background-position: top;
+    }
+    #hero .hero-title {
+        margin-top: 12rem;
+    }
+    #hero .hero-title img {
+        width: 490px;
+    }
+    #hero .links {
+        margin-top: 6rem;
+    }
+    #hero .links td {
+        width: 120px;
+    }
+    #hero .links a {
+        font-size: 1.5rem;
+    }
+    #hero .links img {
+        height: 48px;
+    }
+}
+
+
+
+/*
+ * Section - Tweaks
+ */
+#tweaks {
+    /*background-color: #ff0;*/
+    /*min-height: 600px;*/
+}
+#tweaks .row {
+    /*margin: 3rem 0;*/
+    /*margin: 0;*/
+}
+#tweaks .first-row {
+    /*background-color: red;*/
+    margin-top: 4rem;
+}
+#tweaks .tweak {
+    margin-bottom: 2rem;
+    background-color: #f0f0f0;
+    padding: 2rem;
+    text-align: center;
+}
+#tweaks .tweak-name {
+    font-size: 3.2rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+
+
+/*
+ * Section - About
+ */
+#about {
+    /*padding-bottom: 2rem;*/
+}
+
+
+
+/*
+ * Footer
+ */
+footer {
+    text-align: center;
+    /*padding-top: 4rem;
+    padding-bottom: 1rem;*/
+}
+
+
+
+/*
+ * Gradient Fills
+ */
+
+/*.gradient-fill {
+    background: #8000ff;
+    background: -moz-linear-gradient(top, #8000ff 0%, #ff0080 100%);
+    background: -webkit-linear-gradient(top, #8000ff 0%,#ff0080 100%);
+    background: linear-gradient(to bottom, #8000ff 0%,#ff0080 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8000ff', endColorstr='#ff0080',GradientType=0 );
+}*/
+.gradient-fill {
+    background: #8000ff;
+    background: linear-gradient(to bottom right, #aa33ff 0%, #8000ff 67%);
+}
+
+
+
+/*
+ * CSS Fade In Effect
+ */
+
+.fadein {
+-webkit-animation: fadein ease-in 1s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein ease-in 1s; /* Firefox < 16 */
+    -ms-animation: fadein ease-in 1s; /* Internet Explorer */
+     -o-animation: fadein ease-in 1s; /* Opera < 12.1 */
+        animation: fadein ease-in 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
