@@ -110,6 +110,7 @@ header .links a span {
     vertical-align: middle;
     display: inline-block;
 }
+
 @media (min-width: 550px) {
     header .links {
         margin-top: 6rem;
