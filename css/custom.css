@@ -1,8 +1,8 @@
 html {}
     
 body {
-    /*background-color: #fff;*/
-    /*background-color: #f00;*/
+    background-color: #fff;
+    /*background-color: #eee;*/
     font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #222;
 }
@@ -15,7 +15,6 @@ hr {
 }
 
 a {
-    /*color: #0070c9;*/
     color: #8000ff;
     text-decoration: none;
 }
@@ -27,7 +26,6 @@ a:hover {
 
 /* Skeleton override */
 .container {
-    /*background-color: #ff8000;*/
     position: relative;
     width: 100%;
     max-width: 960px;
@@ -44,77 +42,12 @@ a:hover {
 
 
 
-/*
- * Header Bar
- */
+/* Hero
+ * ---------------------------------------------------------------------------*/
 
 header {
-    /*background-color: #00ff00;*/
-    /*margin: 0;*/
-    /*padding: 1rem 1rem 0rem 1rem;*/
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-    padding: 0 1rem;
-}
-header .header-logo {
-    /*opacity: 0.2;*/
-    opacity: 0.8;
-}
-header .header-icon {
-    margin-right: 5px;
-}
-header a#moon-button {
-    display: block;
-    margin-top: 10px;
-    opacity: 0.5;
-    transition: opacity .2s ease-in-out;
-    -moz-transition: opacity .2s ease-in-out;
-    -webkit-transition: opacity .2s ease-in-out;
-}
-header #moon-button:hover {
-    opacity: 1;
-}
-header #moon-button img {
-    height: 24px;
-}
-
-@media (min-width: 550px) {
-    header {
-        /*padding: 1.5rem 1rem 0.5rem 1rem;*/
-    }
-}
-
-
-
-/*
- * Content Sections
- */
-section {
-    /*background-color: #0f0;*/
-    margin: 0 0 4rem 0;
-    padding: 1rem;
-}
-section .title {
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    font-weight: 400;
-    letter-spacing: 2px;
-    margin-bottom: 1.5rem;
-}
-
-@media (min-width: 550px) {
-    section {
-        margin: 0 0 4rem 0;
-        padding: 1rem 0;
-    }
-}
-
-
-/*
- * Section - Hero
- */
-
-#hero {
+    margin: 0;
+    padding: 0;
     height: 240px;
     overflow: hidden;
     background-image: url("../images/crazymiley.jpg");
@@ -124,118 +57,135 @@ section .title {
     text-align: center;
 }
 @media (min-width: 550px) {
-    #hero {
+    header {
         height: 480px;
     }
 }
 
+
 /* Title */
-#hero .hero-title {
-    margin-top: 5rem;
-}
-#hero .hero-title img {
-    /*width: 300px;*/
-    width: 75%;
+
+header .hero-title {
+    margin-top: 8rem;
 }
 @media (min-width: 550px) {
-    #hero .hero-title {
-        margin-top: 12rem;
+    header .hero-title {
+        margin-top: 14rem;
     }
-    #hero .hero-title img {
-        width: 490px;
+}
+
+header .hero-title img {
+    width: 90%;
+}
+@media (min-width: 550px) {
+    header .hero-title img {
+        /*width: 80%;*/
+        max-width: 800px;
     }
 }
 
 /* Links */
-#hero .links {
-    /*background-color: #8000ff;*/
-    margin-top: 2rem;
+
+header .links {
+    margin-top: 2.5rem;
 }
-#hero .links table {
-    margin: 0 auto;
-}
-#hero .links td {
-    text-align: center;
-    width: 60px;
-    border: 0;
-}
-#hero .links a {
-    color: #ffffff00;
+header .links a {
+    display: inline-block;
+    margin: 0 6px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
     text-decoration: none;
-    font-weight: 300;
-    font-size: 0.8rem;
-    transition: color .20s ease-in-out;
-    -moz-transition: color .20s ease-in-out;
-    -webkit-transition: color .20s ease-in-out;
+    
+    transition: opacity .20s ease-in-out;
+    -moz-transition: opacity .20s ease-in-out;
+    -webkit-transition: opacity .20s ease-in-out;
 }
-#hero .links img {
-    height: 32px;
+header .links a img {
+    height: 20px;
+    vertical-align: middle;
 }
-#hero .links a:hover {
-    color: rgba(255, 255, 255, 0.80);
+header .links a span {
+    vertical-align: middle;
+    display: inline-block;
 }
 @media (min-width: 550px) {
-    #hero .links {
+    header .links {
         margin-top: 6rem;
     }
-    #hero .links td {
-        width: 120px;
-    }
-    #hero .links a {
+    header .links a {
         font-size: 1.5rem;
+        margin-left: 1.4rem;
+        margin-right: 1.4rem;
     }
-    #hero .links img {
-        height: 48px;
+    header .links a:hover {
+        opacity: 0.8;
+    }
+    header .links a img {
+        height: 40px;
     }
 }
 
 
 
-/*
- * Section - Tweaks
- */
+/* Content Sections
+ * ---------------------------------------------------------------------------*/
+
+section {
+    /*background-color: #0f0;*/
+    margin: 3rem 0 2rem 0;
+    padding: 1rem;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+section .title {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    /*letter-spacing: 2px;*/
+}
+@media (min-width: 550px) {
+    section {
+        margin: 4rem 0 4rem 0;
+    }
+    section .title {
+        font-size: 3.6rem;
+    }
+}
+
+
+/* Tweaks */
 
 #tweaks {
-    /*background-color: #ff0;*/
-    /*min-height: 600px;*/
+    /*background-color: orange;*/
 }
 #tweaks .row {
-    /*margin: 3rem 0;*/
-    margin-bottom: 3rem;
-}
-#tweaks .first-row {
-    /*background-color: red;*/
-    margin-top: 4rem;
-}
-#tweaks .tweak {
-    /*background-color: #fafafa;*/
-    margin-bottom: 2rem;
-    padding: 2rem 2rem 0rem 2rem;
-    text-align: center;
-    text-align: left;
-}
-#tweaks .tweak .header {
-    margin-bottom: 1rem;
+    margin-top: 48px;
 }
 
-#tweaks .tweak .header .icon {
-    width: 58px;
+#tweaks .header {
+    margin-bottom: 1rem;
+}
+#tweaks .header .icon {
     width: 29px;
     vertical-align: middle;
 }
-#tweaks .tweak .header .name {
+#tweaks .header .name {
     /*background-color: #0ff;*/
-    font-size: 3rem;
-    font-weight: 300;
+    margin-left: 5px;
+    font-size: 2.8rem;
+    font-weight: 500;
     vertical-align: middle;
-    margin-left: 1rem;
 }
-#tweaks .tweak .tags {
+
+#tweaks .tags {
     /*background-color: #0ff;*/
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
-#tweaks .tweak .tags span {
+#tweaks .tags span {
     /*background-color: #ff0;*/
     border: 1px solid #999;
     border-radius: 4px;
@@ -247,41 +197,43 @@ section .title {
     margin-left: 2px;
     margin-right: 2px;
 }
-#tweaks .tweak p {
+
+#tweaks p {
     margin: 0.5rem 0rem;
-    /*background-color: #0f0;*/
-    font-size: 1.4rem;
     font-weight: 300;
-    text-align: left;
 }
-#tweaks .tweak .screenshot {
+#tweaks .screenshot {
     margin-top: 2rem;
-    /*background-color: red;*/
 }
-#tweaks .tweak .screenshot img {
+#tweaks .screenshot img {
     width: 100%;
 }
 
+@media (min-width: 550px) {
+    #tweaks .row {
+        margin-top: 64px;
+    }
+}
 
-/*
- * Section - About
- */
+
+
+/* About */
+
 #about {
     /*padding-bottom: 2rem;*/
 }
 
 
 
-/*
- * Footer
- */
-footer {
+/* Footer */
+
+#footer {
     text-align: center;
-    font-size: 14px;
-    color: #999;
-    font-weight: 300;
-    /*padding-top: 4rem;
-    padding-bottom: 1rem;*/
+    font-size: 16px;
+    color: #ccc;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
 }
 
 

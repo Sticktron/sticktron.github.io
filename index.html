@@ -16,7 +16,9 @@
     <!-- Fonts -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500" rel="stylesheet"/> -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"/> -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&effect=anaglyph" rel="stylesheet"/>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&effect=anaglyph" rel="stylesheet"/> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&effect=anaglyph" rel="stylesheet"/> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet"/>
     
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -25,89 +27,78 @@
 </head>
 
 <body>
-    <div class="container">
-    <header>
-        <div class="u-pull-left">
-            <img class="header-icon" src="images/Icon.png" height="40"/><!--80x80-->
-            <img class="header-logo" src="images/Lab-black.png" height="40"/><!--382x80-->
-        </div>
-        <div class="u-pull-right">
-            <!-- 48x48
-            <a id="moon-button" href="#"><img src="images/Moon.png"/>
-            -->
-        </div>
-        <div class="u-cf"/>
-    </header>
-    </div>
     
-    <section id="hero">
+    <header>
         <div class="hero-title fadein">
-            <img src="images/Welcome.png"/><!--980x276-->
+            <img src="images/Lab.png" width="800"/>
         </div>
-        
         <div class="links">
-			<table border="0" cellspacing="0" cellpadding="0">
-			<tr>
-				<td>
-                    <a href="mailto:sticktron@hotmail.com">
-					<img src="images/Email.png" alt="Email"/><br/>Email</a>
-                </td>
-                <td>
-                    <a href="http://www.twitter.com/sticktron" target="_blank">
-					<img src="images/Twitter.png" alt="Twitter"/><br/>Twitter</a>
-                </td>
-				<td>
-                    <a href="http://github.com/Sticktron" target="_blank">
-					<img src="images/GitHub.png" alt="GitHub"/><br/>Source Code</a>
-                </td>
-				<td>
-                    <a href="http://repo.sticktron.net">
-					<img src="images/Cydia.png" alt="Repo"/><br/>Repo</a>
-                </td>
-			</tr>
-			</table>
-		</div>
-    </section>
+            <a href="mailto:sticktron@hotmail.com">
+                <img src="images/Email.png" alt="Email"/>
+                <span>Email</span>
+            </a>
+            <a href="http://www.twitter.com/sticktron" target="_blank">
+                <img src="images/Twitter.png" alt="Twitter"/>
+                <span>Twitter</span>
+            </a>
+            <a href="http://github.com/Sticktron" target="_blank">
+                <img src="images/GitHub.png" alt="GitHub"/>
+                <span>Source Code</span>
+            </a>
+            <a href="http://repo.sticktron.net" target="_blank">
+                <img src="images/Repo.png" alt="Repo"/>
+                <span>Repo</span>
+            </a>
+        </div>
+    </header>
     
     <div class="container">
         
         <section id="tweaks">
-            <h6 class="title">Software</h6>
-            <p>Tweaks (runtime modifications) for jailbroken iOS devices.</p>
             
-            <div class="row first-row">
-                <div class="tweak one-half column">
+            <h6 class="title">Tweaks</h6>
+            <p>Software for jailbroken iOS devices.</p>
+            <p>These are free projects I've made over the years.  They are available to download using Cydia. Some are only availabe on my personal repository.</p>
+            
+            <div class="row">
+                <div class="one-half column">
                     <div class="header">
                         <img class="icon" src="images/tweaks/DarkMessages_Icon.png"/>
                         <span class="name">DarkMessages</span>
+                    </div>
+                    <div class="tags">
+                        <span>iOS 10</span>
+                        <span>Cydia</span>
                     </div>
                     <p>DarkMessages gives the Messages app a full dark-theme makeover.</p>
                     <p>Switch between light and dark themes.</p>
                     <p>Supports NightShift and Noctis.</p>
                     <p>Customize the color of message bubbles for that extra personal touch.</p>
-                    <div class="tags">
-                        <span>iOS 10</span>
-                        <span>Cydia</span>
-                    </div>
-                    <div class="screenshot"><img src="images/tweaks/DarkMessages_Pic.png"></div>
                 </div>
-                
-                <div class="tweak one-half column">
-                    <div class="header">
-                        <img class="icon" src="images/tweaks/LockGlyphX_Icon.png"/>
-                        <span class="name">LockGlyph X</span>
-                    </div>
-                    <p>LockGlyph X adds the Apple Pay finger scanning animation to the lock screen, and animates when you unlock. It supports custom themes, sounds and colours.</p>
-                    <div class="tags">
-                        <span>iOS 10</span>
-                        <span>Cydia</span>
-                    </div>
+                <div class="one-half column">
+                    <div class="screenshot"><img src="images/tweaks/DarkMessages_Pic.png"></div>
                 </div>
             </div>
             
             <div class="row">
-                
-                <div class="tweak one-half column">
+                <div class="one-half column">
+                    <div class="header">
+                        <img class="icon" src="images/tweaks/LockGlyphX_Icon.png"/>
+                        <span class="name">LockGlyph X</span>
+                    </div>
+                    <div class="tags">
+                        <span>iOS 10</span>
+                        <span>Cydia</span>
+                    </div>
+                    <p>LockGlyph X adds the Apple Pay finger scanning animation to the lock screen, and animates when you unlock. It supports custom themes, sounds and colours.</p>
+                </div>
+                <div class="one-half column">
+                    <!-- <div class="screenshot"><img src="images/tweaks/LockGlyphX_Pic.png"></div> -->
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="one-half column">
                     <div class="header">
                         <img class="icon" src="images/tweaks/Croutons_Icon.png"/>
                         <span class="name">Croutons</span>
@@ -117,179 +108,242 @@
                         <span>iOS 9-10</span>
                         <span>Cydia</span>
                     </div>
+                </div>
+                <div class="one-half column">
                     <div class="screenshot"><img src="images/tweaks/Croutons_Pic.png"></div>
                 </div>
-                
-                <div class="tweak one-half column">
+            </div>
+            
+            <div class="row">
+                <div class="one-half column">
                     <div class="header">
                         <img class="icon" src="images/tweaks/SSHIcon_Icon.png"/>
                         <span class="name">SSHIcon</span>
                     </div>
-                    <p>A status bar indicator for SSH connections. Tap and hold the indicator icon to trigger a popup with more information about each connection. Includes a few different indicator styles to choose from.</p>
                     <div class="tags">
                         <span>iOS 7-10</span>
                         <span>Cydia</span>
                     </div>
+                    <p>A status bar indicator for SSH connections. Tap and hold the indicator icon to trigger a popup with more information about each connection. Includes a few different indicator styles to choose from.</p>
+                </div>
+                <div class="one-half column">
+                    <!-- <div class="screenshot"><img src="images/tweaks/SSHIcon_Pic.png"></div> -->
                 </div>
             </div>
             
             <div class="row">
-                <div class="tweak one-half column">
+                <div class="one-half column">
                     <div class="header">
-                        <img class="icon" src="images/tweaks/AhAhAh_Icon.png"/>
+                        <img class="icon" src="images/tweaks/AhAhAh2_Icon.png"/>
                         <span class="name">Ah!Ah!Ah! 2</span>
                     </div>
-                    <p>Trigger a video alarm when someone tries to unlock your phone.</p>
                     <div class="tags">
                         <span>iOS 7-10</span>
                         <span>My Repo</span>
                     </div>
+                    <p>Trigger a video alarm when someone tries to unlock your phone.</p>
                 </div>
-                <div class="tweak one-half column">
+                <div class="one-half column">
+                    <!-- <div class="screenshot"><img src="images/tweaks/AhAhAh2_Pic.png"></div> -->
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="one-half column">
                     <div class="header">
                         <img class="icon" src="images/tweaks/AhAhAh_Icon.png"/>
                         <span class="name">Ah!Ah!Ah!</span>
                     </div>
-                    <p>Trigger a video alarm when someone tries to unlock your phone.</p>
                     <div class="tags">
                         <span>iOS 7-8</span>
                         <span>Cydia</span>
                     </div>
+                    <p>Trigger a video alarm when someone tries to unlock your phone.</p>
+                </div>
+                <div class="one-half column">
+                    <!-- <div class="screenshot"><img src="images/tweaks/AhAhAh_Pic.png"></div> -->
                 </div>
             </div>
-            
+                
             <div class="row">
-                <div class="tweak one-half column">
+                <div class="one-half column">
                     <div class="header">
                         <img class="icon" src="images/tweaks/NCMeters9_Icon.png"/>
                         <span class="name">NCMeters 9</span>
                     </div>
-                    <p>System stats widget for the Notification Center.</p>
                     <div class="tags">
                         <span>iOS 9-10</span>
                         <span>My Repo</span>
                     </div>
+                    <p>System stats widget for the Notification Center.</p>
                 </div>
-                <div class="tweak one-half column">
+                    <div class="one-half column">
+                        <!-- <div class="screenshot"><img src="images/tweaks/NCMeters9_Pic.png"></div> -->
+                    </div>
+            </div>
+            
+            <div class="row">
+                <div class="one-half column">
                     <div class="header">
                         <img class="icon" src="images/tweaks/NCMeters_Icon.png"/>
                         <span class="name">NCMeters</span>
                     </div>
-                    <p>System stats widget for the Notification Center.</p>
                     <div class="tags">
                         <span>iOS 7-8</span>
                         <span>Cydia</span>
                     </div>
+                    <p>System stats widget for the Notification Center.</p>
+                </div>
+                <div class="one-half column">
+                    <!-- <div class="screenshot"><img src="images/tweaks/NCMeters_Pic.png"></div> -->
                 </div>
             </div>
             
             <div class="row">
-                <div class="tweak one-half column">
+                <div class="one-half column">
                     <div class="header">
                         <img class="icon" src="images/tweaks/CCMeters_Icon.png"/>
                         <span class="name">CCMeters</span>
                     </div>
-                    <p>System stats widget for the Control Center.</p>
                     <div class="tags">
                         <span>iOS 7-8</span>
                         <span>Cydia</span>
                     </div>
+                    <p>System stats widget for the Control Center.</p>
                 </div>
-                <div class="tweak one-half column">
+                <div class="one-half column">
+                    <!-- <div class="screenshot"><img src="images/tweaks/CCMeters_Pic.png"></div> -->
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="one-half column">
                     <div class="header">
                         <img class="icon" src="images/tweaks/FCUM_Icon.png"/>
                         <span class="name">FrontCamUnMirror</span>
                     </div>
-                    <p>Un-mirror the camera preview when taking selfies.</p>
                     <div class="tags">
                         <span>iOS 7-10</span>
                         <span>Cydia</span>
                     </div>
+                    <p>Un-mirror the camera preview when taking selfies.</p>
+                </div>
+                <div class="one-half column">
+                    <!-- <div class="screenshot"><img src="images/tweaks/FCUM_Pic.png"></div> -->
                 </div>
             </div>
             
             <div class="row">
-                <div class="tweak one-half column">
+                <div class="one-half column">
                     <div class="header">
                         <img class="icon" src="images/tweaks/ReacherSwitcher_Icon.png"/>
                         <span class="name">ReacherSwitcher</span>
                     </div>
-                    <p></p>
                     <div class="tags">
                         <span>iOS 10</span>
                         <span>Cydia</span>
                     </div>
+                    <p>...</p>
                 </div>
-                <div class="tweak one-half column">
+                <div class="one-half column">
+                    <!-- <div class="screenshot"><img src="images/tweaks/ReacherSwitcher_Pic.png"></div> -->
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="one-half column">
                     <div class="header">
                         <img class="icon" src="images/tweaks/Wu-Lock_Icon.png"/>
                         <span class="name">Wu-Lock</span>
                     </div>
-                    <p></p>
                     <div class="tags">
                         <span>iOS 8-9</span>
                         <span>Cydia</span>
                     </div>
+                    <p>...</p>
+                </div>
+                <div class="one-half column">
+                    <!-- <div class="screenshot"><img src="images/tweaks/Wu-Lock_Pic.png"></div> -->
                 </div>
             </div>
             
             <div class="row">
-                <div class="tweak one-half column">
+                <div class="one-half column">
                     <div class="header">
                         <img class="icon" src="images/tweaks/BigBubbles_Icon.png"/>
                         <span class="name">BigBubbles</span>
                     </div>
-                    <p></p>
                     <div class="tags">
                         <span>iOS 7</span>
                         <span>Cydia</span>
                     </div>
+                    <p>...</p>
                 </div>
-                <div class="tweak one-half column">
-                    <div class="header">
-                        <img class="icon" src="images/tweaks/Notific8_Icon.png"/>
-                        <span class="name">Notific8</span>
-                    </div>
-                    <p></p>
-                    <div class="tags">
-                        <span>iOS 7</span>
-                        <span>Cydia</span>
-                    </div>
+                <div class="one-half column">
+                    <!-- <div class="screenshot"><img src="images/tweaks/BigBubbles_Pic.png"></div> -->
                 </div>
             </div>
             
             <div class="row">
-                <div class="tweak one-half column">
+                <div class="one-half column">
+                    <div class="header">
+                        <img class="icon" src="images/tweaks/Notific8_Icon.png"/>
+                        <span class="name">Notific8</span>
+                    </div>
+                    <div class="tags">
+                        <span>iOS 7</span>
+                        <span>Cydia</span>
+                    </div>
+                    <p>...</p>
+                </div>
+                <div class="one-half column">
+                    <!-- <div class="screenshot"><img src="images/tweaks/Notific8_Pic.png"></div> -->
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="one-half column">
                     <div class="header">
                         <img class="icon" src="images/tweaks/WeeStats_Icon.png"/>
                         <span class="name">WeeStats</span>
                     </div>
-                    <p></p>
                     <div class="tags">
                         <span>iOS 5</span>
                         <span>Cydia</span>
                     </div>
+                    <p>...</p>
                 </div>
-                <div class="tweak one-half column">
+                <div class="one-half column">
+                    <!-- <div class="screenshot"><img src="images/tweaks/WeeStats_Pic.png"></div> -->
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="one-half column">
                     <div class="header">
                         <img class="icon" src="images/tweaks/Retinasizer_Icon.png"/>
                         <span class="name">Retinasizer</span>
                     </div>
-                    <p></p>
                     <div class="tags">
                         <span>iOS 5</span>
                         <span>Cydia</span>
                     </div>
+                    <p>...</p>
+                </div>
+                <div class="one-half column">
+                    <!-- <div class="screenshot"><img src="images/tweaks/Retinasizer_Pic.png"></div> -->
                 </div>
             </div>
+            
         </section>
+        
         <hr/>
         
         <section id="about">
             <h6 class="title">About</h6>
             <p>
-                I make things,<br/>
-                I make things,<br/>
+                I think of things,<br/>
+                I make the things<br/>
             </p>
             <p>
                 design, develop<br/>
@@ -303,19 +357,17 @@
         
         <hr/>
         
+        <section id="footer">
+            <p>Made with haste by Sticktron.</p>
+            
+            <!-- <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.getskeleton.com" data-text="Skeleton - A dead simple, responsive boilerplate." data-via="dhg" data-related="dhg">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> -->
+            
+            <!-- <iframe src="http://ghbtns.com/github-btn.html?user=sticktron&repo=croutons&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+            <iframe src="http://ghbtns.com/github-btn.html?user=sticktron&repo=croutons&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe> -->
+        </section>
+        
     </div><!-- end content container -->
-    
-    
-    <footer>
-        <p>Made with haste by Sticktron.</p>
-        
-        <!-- <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.getskeleton.com" data-text="Skeleton - A dead simple, responsive boilerplate." data-via="dhg" data-related="dhg">Tweet</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> -->
-        
-        <!-- <iframe src="http://ghbtns.com/github-btn.html?user=sticktron&repo=croutons&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-        <iframe src="http://ghbtns.com/github-btn.html?user=sticktron&repo=croutons&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe> -->
-    </footer>
-    
     
     
     <script>
