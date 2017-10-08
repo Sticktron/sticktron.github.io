@@ -137,7 +137,7 @@ section {
     /*background-color: #0f0;*/
     margin: 3rem 0 2rem 0;
     padding: 1rem;
-    font-size: 1.2em;
+    font-size: 1.8rem;
     font-weight: 300;
 }
 section .title {
@@ -160,10 +160,15 @@ section .title {
 /* Tweaks */
 
 #tweaks {
-    /*background-color: orange;*/
 }
 #tweaks .row {
     margin-top: 48px;
+    /*min-height: 240px;*/
+    background: #fff;
+    /*background: -moz-linear-gradient(top, #fff 0%, #ff0080 100%);*/
+    /*background: -webkit-linear-gradient(top, #fff 0%, #ff0080 100%);*/
+    background: linear-gradient(to bottom, #fff 66%, #fafafa 100%);
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#ff0080',GradientType=0 );*/
 }
 
 #tweaks .header {
@@ -199,15 +204,32 @@ section .title {
     margin-right: 2px;
 }
 
-#tweaks p {
+#tweaks .row p {
     margin: 0.5rem 0rem;
-    font-weight: 300;
+    font-size: 1.6rem;
 }
+
 #tweaks .screenshot {
-    margin-top: 2rem;
+    background-color: red;
+    display: table-cell;
+    vertical-align: bottom;
+    /*min-height: 600px;*/
 }
 #tweaks .screenshot img {
+    /*background-color: yellow;*/
+    vertical-align: bottom;
     width: 100%;
+    /*max-width: 400px;*/
+}
+
+#tweaks ul {
+    margin-top: 1.5rem;
+}
+#tweaks li {
+    list-style: disc inside;
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 @media (min-width: 550px) {
