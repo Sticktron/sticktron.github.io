@@ -165,10 +165,10 @@ section .title {
     margin-top: 48px;
     /*min-height: 240px;*/
     background: #fff;
-    /*background: -moz-linear-gradient(top, #fff 0%, #ff0080 100%);*/
-    /*background: -webkit-linear-gradient(top, #fff 0%, #ff0080 100%);*/
+    background: -moz-linear-gradient(top, #fff 66%, #fafafa 100%);
+    background: -webkit-linear-gradient(top, #fff 66%, #fafafa 100%);
     background: linear-gradient(to bottom, #fff 66%, #fafafa 100%);
-    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#ff0080',GradientType=0 );*/
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#fafafa',GradientType=0 );
 }
 
 #tweaks .header {
@@ -235,6 +235,8 @@ section .title {
 @media (min-width: 550px) {
     #tweaks .row {
         margin-top: 64px;
+        background: none;
+        border-bottom: 1px solid #f0f0f0;
     }
 }
 
