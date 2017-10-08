@@ -210,7 +210,7 @@ section .title {
 }
 
 #tweaks .screenshot {
-    background-color: red;
+    /*background-color: red;*/
     display: table-cell;
     vertical-align: bottom;
     /*min-height: 600px;*/
