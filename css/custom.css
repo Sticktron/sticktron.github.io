@@ -24,14 +24,13 @@ a:hover {
 }
 
 
-/* Skeleton override */
+/* Skeleton overrides */
 .container {
     position: relative;
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
-    /*padding: 0 20px;*/
-    padding: 0;
+    padding: 0 20px;
     box-sizing: border-box;
 }
 @media (min-width: 550px) {
@@ -130,15 +129,15 @@ header .links a span {
 
 
 
-/* Content Sections
- * ---------------------------------------------------------------------------*/
+/* Sections ------------------------------------------------------------------*/
 
 section {
     /*background-color: #0f0;*/
-    margin: 3rem 0 2rem 0;
-    padding: 1rem;
+    /*margin: 4rem 0 2rem 0;*/
+    padding: 4rem 1rem 2rem 1rem;
     font-size: 1.8rem;
     font-weight: 300;
+    border-bottom: 1px solid #f0f0f0;
 }
 section .title {
     margin-bottom: 1rem;
@@ -149,7 +148,8 @@ section .title {
 }
 @media (min-width: 550px) {
     section {
-        margin: 4rem 0 4rem 0;
+        /*margin: 4rem 0 4rem 0;*/
+        padding: 6rem 0 4rem 0;
     }
     section .title {
         font-size: 3.6rem;
@@ -160,15 +160,28 @@ section .title {
 /* Tweaks */
 
 #tweaks {
+    /*background: #0f0;*/
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    /*border-bottom: none;*/
 }
-#tweaks .row {
-    margin-top: 48px;
+    
+#tweaks .tweak {
+    /*margin-top: 48px;*/
     /*min-height: 240px;*/
+    padding: 0;
+    padding-top: 4rem;
     background: #fff;
-    background: -moz-linear-gradient(top, #fff 66%, #fafafa 100%);
-    background: -webkit-linear-gradient(top, #fff 66%, #fafafa 100%);
-    background: linear-gradient(to bottom, #fff 66%, #fafafa 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#fafafa',GradientType=0 );
+    background: -moz-linear-gradient(top, #fff 33%, #f0f0f0 100%);
+    background: -webkit-linear-gradient(top, #fff 33%, #f0f0f0 100%);
+    background: linear-gradient(to bottom, #fff 33%, #f0f0f0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#f0f0f0',GradientType=0 );
+}
+@media (min-width: 550px) {
+    #tweaks .tweak {
+        padding-top: 6rem;
+    }
 }
 
 #tweaks .header {
@@ -232,14 +245,6 @@ section .title {
     margin-bottom: 0.5rem;
 }
 
-@media (min-width: 550px) {
-    #tweaks .row {
-        margin-top: 64px;
-        background: none;
-        border-bottom: 1px solid #f0f0f0;
-    }
-}
-
 
 
 /* About */
@@ -252,13 +257,13 @@ section .title {
 
 /* Footer */
 
-#footer {
+footer {
     text-align: center;
-    font-size: 16px;
+    font-size: 1.4rem;
     color: #ccc;
-    font-weight: 400;
+    font-weight: 300;
     margin: 0;
-    padding: 0;
+    padding: 2rem 0 0 0;
 }
 
 
