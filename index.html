@@ -46,6 +46,9 @@
                 <span>Repo</span>
             </a>
         </div>
+        <div id="dark-mode-button">
+            <a href="#"><img src="images/Moon_off.png" alt="Dark Mode Switch"/></a>
+        </div>
     </header>
     
     
@@ -424,8 +427,22 @@
     )();
     </script>
     
-    <!-- Optional JavaScript -->
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>     -->
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $('#dark-mode-button').click(function() {
+                var isDark = $('body').hasClass('dark');
+                if (!isDark) {
+                    $(this).find('img').attr('src', 'images/Moon_on.png');
+                    $('body').addClass('dark');
+                } else {
+                    $('body').removeClass('dark');
+                    $(this).find('img').attr('src', 'images/Moon_off.png');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
