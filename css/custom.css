@@ -267,13 +267,13 @@ body.dark #tweaks .tweak {
     font-size: 1.6rem;
 }
 
-#tweaks .screenshot {
+.screenshot {
     /*background-color: red;*/
     display: table-cell;
     vertical-align: bottom;
     /*min-height: 600px;*/
 }
-#tweaks .screenshot img {
+.screenshot img {
     /*background-color: yellow;*/
     vertical-align: bottom;
     width: 100%;
